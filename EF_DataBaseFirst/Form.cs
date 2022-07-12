@@ -35,5 +35,13 @@ namespace EF_DataBaseFirst
         {
             clear();
         }
+
+        private void LoadData() 
+        {
+            using (EFDB_FirstEntities db = new EFDB_FirstEntities())
+            {
+                dgvCustomer.DataSource = db.Customers.ToList<Customer>();
+            }
+        }
     }
 }
