@@ -16,7 +16,7 @@ namespace EF_DataBaseFirst
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new System.Windows.Forms.Form());
+            Application.Run(new Form());
         }
     }
 }
